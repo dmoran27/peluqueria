@@ -1,0 +1,497 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Arial", Sans-serif;
+}
+
+.contenedor{
+	margin: 0px auto;
+	width: 90%;
+	max-width: 100%;
+	overflow: hidden;
+
+}
+
+/*-------Header---------*/
+
+header{
+	background: url('../imagenes/b.jpg'), #d52349;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center 0;
+}
+
+header .contenedor{
+	height: 700px;
+	position: relative;
+}
+
+header .menu{
+	width: 100%;
+	text-align: right;
+}
+
+
+header .menu nav a{
+	text-decoration: none;
+	margin: 40px 0px;
+	padding: 20px;
+	border-radius: 50%;
+	display: inline-block;
+	color: #5da099;
+	font-weight: bold;
+	position: relative;
+}
+
+header .menu nav a:hover{
+	background: rgba(0,0,0,.3);
+	color: #fff;
+}
+
+header .informacion{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+}
+
+header .informacion .titulo{
+	font-size: 50px;
+	color: #000;
+	margin-top: -20px;
+}
+
+header .informacion .descripcion{
+	font-size: 1.5em;
+	margin-top: 30px;
+	padding: 15px;
+	color: #000;
+	font-style: italic;
+	display: inline-block;
+	border-top: 3px solid rgba(0,0,0,.5);
+}
+
+/**************Main****************/
+
+.main{
+	background: url(../imagenes/bg-textura.png);
+	background-repeat: repeat;
+}
+
+.main .acercaDe .contenedor{
+	overflow: visible;
+	position: relative;
+}
+
+.main .acercaDe .contenedor .imagen{
+	width: 80%;
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	top: -50px;
+
+}
+
+.main .acercaDe .contenedor .imagen img{
+	width: 100%;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0,.35);
+}
+
+
+.main .acercaDe .contenedor .contenido{
+	width: 50%;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+	border-radius: 5px;
+	position: relative;
+	z-index: 1;
+	background: #fff;
+	float: right;
+	top: 500px;
+	padding: 40px;
+}
+.main .acercaDe .contenedor .contenido .titulo{
+	text-align: center;
+	padding-top: 20px;
+	font-size: 25px;
+	font-style: italic;
+	color: #d52349;
+}
+.main .acercaDe .contenedor .contenido p{
+	padding: 15px;
+	line-height: 25px;
+	font-size: 18px;
+	text-align: justify;
+}
+
+/*********** Menu ***********/
+
+.main .promocion {
+	margin-bottom: 50px;
+	padding-top: 570px;
+
+}
+.main .promocion .titulo {
+	color: #d52349;
+	text-align: center;
+	padding: 1.75em;
+}
+.main .promocion .contenedor{
+	background: transparent;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
+.main .promocion .contenedor .o2{
+	box-shadow: 32px 0 32px 0 rgba(0, 0, 0, 0.15);
+	box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.15);
+}
+
+.main .promocion .contenedor .oferta{
+	text-align: center;
+	padding: 1.75em;
+}
+.main .promocion .contenedor .oferta .titulo{
+	color: #d52349;
+	font-style: italic;
+}
+
+.main .promocion .contenedor .oferta .icono{
+	color: #fff;
+	font-size: 20px;
+	background: #5da099;
+	text-align: center;
+	position: relative;
+    display: inline-block;
+    width: 9em;
+    padding: 1.75em 0 0.75em 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0 0 5em 0;
+    cursor: default;
+
+}
+.main .promocion .contenedor .oferta .icono :after{
+    content: '';
+    position: absolute;
+    bottom: -1.99em;
+    left: 0;
+    border-top: solid 2em #5da099;
+    border-left: solid 4.5em transparent;
+    border-right: solid 4.5em transparent;
+}
+/***************Precios*****************/
+
+.main .menu{
+	border-top: 3px solid #5da099;
+	border-bottom: 3px solid #5da099;
+	margin-bottom: 20px
+	background: #fff;
+	padding: 10px;
+
+}
+.main .menu .contenedor{
+	padding: 10px;
+	border: 4px double #5da099;
+	background: #fff;
+	
+}
+.main .menu .contenedor .titulo{
+	color: #d52349;
+	font-style: italic;
+	margin: 10px 0px;
+	text-align: center;
+}
+
+.main .menu .contenedor .tabla{
+	margin: 30px auto;
+}
+
+.main .menu .contenedor .tabla thead{
+	color: #5da099;	text-align: justify;
+
+}
+.main .menu .contenedor .tabla tbody th{
+	padding: 10px;
+	text-align: justify;
+}
+
+
+.main .menu .contenedor .tabla .th .icono{
+	color: #fff;
+	font-size: 13px;
+	background: #d52349;
+	position: relative;
+    display: inline-block;
+    width: 3em;
+    padding: 1.8em ;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin: 0  5em 0 0;
+}
+.main .menu .contenedor .tabla .th .icono :after{
+    content: '';
+    position: absolute;
+    bottom: 0em;
+    left: 3.6em;
+    border-left:  solid 2em #d52349;
+    border-top: solid 2.35em transparent;
+    border-bottom: solid 2.35em transparent;
+}
+
+
+/***************Galeria*****************/
+
+.main .galeria{
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.main .galeria .img{
+	width: 33%;
+	margin: 3px 0;
+
+	
+}
+.main .galeria .img img{
+	width: 100%;
+	vertical-align: top;
+	opacity: .6;
+}
+
+.main .galeria .img:hover img{
+	opacity: .9;
+	-webkit-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	transition: all 2s ease;
+}
+
+/*************Redes Sociales**************/
+
+.main .redesSociales{
+	background: #ccc;
+	padding: 20px;
+	text-align: center;
+}
+
+.main .redesSociales .twitter,
+.main .redesSociales .facebook,
+.main .redesSociales .instagram,
+.main .redesSociales .youtube,
+.main .redesSociales .git{ 
+	font-size: 30px;
+	padding: 20px;
+	color: #f6f6f6;
+	line-height: 30px;
+	margin: 0px 10px;
+	text-decoration: none;
+}
+
+.main .redesSociales .twitter:hover,
+.main .redesSociales .facebook:hover,
+.main .redesSociales .instagram:hover,
+.main .redesSociales .youtube:hover,
+.main .redesSociales .git:hover{ 
+	color: #fff;
+	text-shadow: 0px 0px 5px rgba(0,0,0,.35);
+}
+
+/*****************ubicacion********************/
+
+.ubicacion{
+	background: #f8f8f8;
+	padding: 20px;
+}
+
+.ubicacion .contenerdor{
+	overflow: hidden;
+}
+
+
+.ubicacion  .contactos{
+	float: left;
+	width: 50%;
+	font-size: 20px;
+}
+
+.ubicacion  .contactos p{
+	padding-top: 15px
+}
+
+.ubicacion .horarios{
+	float: right;
+	width: 50%;
+	font-size: 20px;
+	overflow: hidden;
+}
+.ubicacion  h3{
+	text-align: center;
+	font-size: 20px;
+	margin-top: 20px;
+
+}
+.ubicacion .horarios .semana{
+	width: 50%;
+	float: left;
+	margin-top: 20px;
+}
+.ubicacion .horarios .finSemana{
+	width: 50%;
+	float: right;
+	text-align: right;
+	margin-top: 20px;
+}
+
+
+/****************mapa***********************/
+ 
+.mapa{
+	width: 100%;
+	height: 350px;
+}
+ .mapa iframe{
+ 	width: 100%;
+ 	height: 350px;
+ 	margin: 0px;
+ }
+
+ /******************footer**********************/
+
+ .autor{
+ 	background: #060606;
+ 	padding: 15px;
+ 	margin: 0px;
+ }
+
+ .autor p{
+ 	color: #fff;
+ 	text-align: center;
+ 	font-size: 18px;
+ }
+
+ /******************MediaQuery*********************/
+
+@media screen and (max-width: 768px) {
+	
+
+	header .menu .nav{
+		font-size: 25px;
+		display: flex;
+		text-align: center;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+	
+	}
+
+
+	.main .acercaDe .contenedor .contenido{
+		width: 80%;
+		position: static;
+		padding: 15px;
+	}
+	.main .acercaDe .contenedor .imagen{
+		width: 80%;
+		position: static;
+		padding-top: 10px;
+	}
+
+	.main .promocion .contenedor{
+		flex-wrap: wrap;
+
+	}
+	.main .promocion .contenedor .o2{
+		box-shadow: none;
+	}
+
+
+	.main .menu .contenedor .tabla .th .icono{
+		display: none;
+	
+}
+
+@media screen and (max-width: 544px) {
+	header .menu{
+		font-size: 18px;
+		text-align: center;
+		background: rgba(0,0,0,.6);
+		border-radius: 0% 0% 50% 50%;
+	}
+
+	header .menu nav a{
+	margin: 10px 10px;
+	}
+
+	header .informacion .titulo{
+		font-size: 30px;
+	}
+	header .informacion .titulo span{
+		font-size: 30px;
+	}
+	header  .descripcion{
+		font-size: 8px;
+	}
+
+	.main .acercaDe .contenedor .contenido{
+		width: 100%;
+		position: static;
+		padding: 15px;
+		font-size: 20px;
+	}
+	.main .acercaDe .contenedor .imagen{
+		width: 100%;
+		position: static;
+		padding-top: 10px;
+	}
+
+	.main .menu .contenedor2 .platillos,
+	.main .menu .contenedor2 .bebidas{
+	width: 100%;
+	}
+
+	.main .menu .contenedor2 .platillos h4,
+	.main .menu .contenedor2 .bebidas  h4{
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+		margin-top: 20px;
+	}
+
+	.ubicacion  .contactos{
+		width: 100%;
+		font-size: 15px;
+	}
+
+	.ubicacion .horarios{
+		width: 100%;
+		font-size: 15px;
+	}
+	.main .redesSociales .twitter,
+	.main .redesSociales .facebook,
+	.main .redesSociales .instagram,
+	.main .redesSociales .youtube,
+	.main .redesSociales .git{ 
+	font-size: 50px;
+	padding: 10px;
+	}
+	
+	.main .galeria .img{
+	width: 50%;
+	float: left;
+	}
+	header .contenedor{
+	height: 500px;
+	}
+
+	.mapa{
+	width: 80%;
+	height: 350px;
+	margin: 0px auto;
+}
+}
