@@ -25,6 +25,7 @@ header{
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center 0;
+	min-height: 100vh;
 }
 
 header .contenedor{
@@ -63,7 +64,7 @@ header .informacion{
 header .informacion .titulo{
 	font-size: 50px;
 	color: #000;
-	margin-top: -20px;
+	margin-top: -100px;
 }
 
 header .informacion .descripcion{
@@ -93,7 +94,7 @@ header .informacion .descripcion{
 	position: absolute;
 	z-index: 0;
 	left: 0;
-	top: -50px;
+	top: -350px;
 
 }
 
